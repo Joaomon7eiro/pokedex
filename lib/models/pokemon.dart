@@ -2,7 +2,7 @@ class Pokemon {
   int id;
   String num;
   String name;
-  String img;
+  String image;
   List<String> type;
   String height;
   String weight;
@@ -13,7 +13,7 @@ class Pokemon {
       {this.id,
       this.num,
       this.name,
-      this.img,
+      this.image,
       this.type,
       this.height,
       this.weight,
@@ -24,7 +24,6 @@ class Pokemon {
     id = json['id'];
     num = json['num'];
     name = json['name'];
-    img = json['img'];
     type = json['type'].cast<String>();
     height = json['height'];
     weight = json['weight'];
@@ -42,7 +41,7 @@ class Pokemon {
     data['id'] = this.id;
     data['num'] = this.num;
     data['name'] = this.name;
-    data['img'] = this.img;
+    data['image'] = this.image;
     data['type'] = this.type;
     data['height'] = this.height;
     data['weight'] = this.weight;

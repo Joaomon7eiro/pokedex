@@ -6,6 +6,8 @@ import './pages/home_page.dart';
 import 'package:provider/provider.dart';
 import './providers/pokedex_provider.dart';
 
+import './pages/details_page.dart';
+
 void main() => runApp(App());
 
 class App extends StatelessWidget {
@@ -20,7 +22,10 @@ class App extends StatelessWidget {
       ],
       child: MaterialApp(
         title: 'Flutter Demo',
-        home: HomePage(),
+        routes: {
+          '/': (context) => HomePage(),
+          DetailsPage.routeName: (context) => DetailsPage(),
+        },
       ),
     );
   }

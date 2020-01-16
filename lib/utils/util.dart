@@ -30,7 +30,7 @@ class Util {
       case 'Ice':
         return Color(0xff7BCAE7);
       case 'Dragon':
-        return Color(0xffF16E57);
+        return Color(0xff4800e5);
       default:
         return Color(0xffAAAAAA);
     }
